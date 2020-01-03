@@ -1,5 +1,6 @@
 cmake_minimum_required (VERSION 3.15)
 set (CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include(FetchContent)
 
 project(AdventOfCode2019)
@@ -12,4 +13,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(googletest)
 
+enable_testing()
+
 add_subdirectory(day1)
+add_subdirectory(day2)
